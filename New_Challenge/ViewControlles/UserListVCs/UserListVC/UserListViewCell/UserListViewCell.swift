@@ -48,6 +48,9 @@ class UserListViewCell: UITableViewCell {
 extension UserListViewCell {
     
     func creatUI() {
+        img_userPhoto.layer.cornerRadius = img_userPhoto.frame.height / 2
+        img_userPhoto.layer.borderWidth = 0.5
+        img_userPhoto.layer.borderColor = UIColor.systemGray4.cgColor
         guard let user else { return }
         ul_userName.text = user.name
         ul_userEmail.text = user.email

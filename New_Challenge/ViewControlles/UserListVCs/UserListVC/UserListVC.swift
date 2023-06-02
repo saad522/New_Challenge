@@ -25,7 +25,8 @@ class UserListVC: UIViewController {
     private lazy var imageService = ImageService()
     private var max : Int = 6
     private var currentPage : Int = 1
-    var avatarImage : UIImage!
+    
+    
     //MARK: Outlets -
     @IBOutlet weak var tv_userListTv: UITableView!
     
@@ -72,6 +73,9 @@ extension UserListVC: UITableViewDelegate & UITableViewDataSource {
         tv_userListTv.dataSource = self
         let nibName = UINib(nibName: "UserListViewCell", bundle: nil)
         tv_userListTv.register(nibName, forCellReuseIdentifier: cellID)
+        
+        //NAvigation Style
+        self.title = "Contacts"
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         loadPage(by: indexPath)
