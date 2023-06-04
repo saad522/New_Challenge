@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204108772A2CEA7D00298B13 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204108762A2CEA7D00298B13 /* UIViewControllerExt.swift */; };
+		204108792A2CEB1500298B13 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204108782A2CEB1500298B13 /* UIImageExt.swift */; };
 		209ABC832A225D6200723043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ABC822A225D6200723043 /* AppDelegate.swift */; };
 		209ABC852A225D6200723043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ABC842A225D6200723043 /* SceneDelegate.swift */; };
 		209ABC8C2A225D6400723043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209ABC8B2A225D6400723043 /* Assets.xcassets */; };
 		209ABC8F2A225D6400723043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209ABC8D2A225D6400723043 /* LaunchScreen.storyboard */; };
 		209ABC9A2A225D6400723043 /* New_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ABC992A225D6400723043 /* New_ChallengeTests.swift */; };
-		209ABCA42A225D6500723043 /* New_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ABCA32A225D6500723043 /* New_ChallengeUITests.swift */; };
-		209ABCA62A225D6500723043 /* New_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ABCA52A225D6500723043 /* New_ChallengeUITestsLaunchTests.swift */; };
 		209ABCBE2A24B1FF00723043 /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ABCBC2A24B1FF00723043 /* UserListVC.swift */; };
 		209ABCBF2A24B1FF00723043 /* UserListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209ABCBD2A24B1FF00723043 /* UserListVC.xib */; };
 		209ABCC32A24B78C00723043 /* UserListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ABCC12A24B78C00723043 /* UserListViewCell.swift */; };
@@ -43,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204108762A2CEA7D00298B13 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		204108782A2CEB1500298B13 /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		209ABC7F2A225D6200723043 /* New_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = New_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209ABC822A225D6200723043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209ABC842A225D6200723043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		209ABC952A225D6400723043 /* New_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = New_ChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		209ABC992A225D6400723043 /* New_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_ChallengeTests.swift; sourceTree = "<group>"; };
 		209ABC9F2A225D6400723043 /* New_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = New_ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		209ABCA32A225D6500723043 /* New_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_ChallengeUITests.swift; sourceTree = "<group>"; };
-		209ABCA52A225D6500723043 /* New_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		209ABCBC2A24B1FF00723043 /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
 		209ABCBD2A24B1FF00723043 /* UserListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListVC.xib; sourceTree = "<group>"; };
 		209ABCC12A24B78C00723043 /* UserListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewCell.swift; sourceTree = "<group>"; };
@@ -95,7 +95,6 @@
 			children = (
 				209ABC812A225D6200723043 /* New_Challenge */,
 				209ABC982A225D6400723043 /* New_ChallengeTests */,
-				209ABCA22A225D6500723043 /* New_ChallengeUITests */,
 				209ABC802A225D6200723043 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +112,8 @@
 		209ABC812A225D6200723043 /* New_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				209ABD142A2BAEBC00723043 /* Extensions */,
+				209ABD122A2BAE5800723043 /* Common */,
 				209ABCB22A225F1D00723043 /* ViewControlles */,
 				209ABC822A225D6200723043 /* AppDelegate.swift */,
 				209ABC842A225D6200723043 /* SceneDelegate.swift */,
@@ -129,15 +130,6 @@
 				209ABC992A225D6400723043 /* New_ChallengeTests.swift */,
 			);
 			path = New_ChallengeTests;
-			sourceTree = "<group>";
-		};
-		209ABCA22A225D6500723043 /* New_ChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				209ABCA32A225D6500723043 /* New_ChallengeUITests.swift */,
-				209ABCA52A225D6500723043 /* New_ChallengeUITestsLaunchTests.swift */,
-			);
-			path = New_ChallengeUITests;
 			sourceTree = "<group>";
 		};
 		209ABCB22A225F1D00723043 /* ViewControlles */ = {
@@ -171,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				209ABCC82A24BDFE00723043 /* BaseInteractor.swift */,
-				209ABCCF2A25E8FE00723043 /* ImageService.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -210,6 +201,39 @@
 				209ABCC62A24B9CF00723043 /* UserViewListModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		209ABD122A2BAE5800723043 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				209ABD162A2BAEDA00723043 /* Services */,
+				209ABD152A2BAECE00723043 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		209ABD142A2BAEBC00723043 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				204108762A2CEA7D00298B13 /* UIViewControllerExt.swift */,
+				204108782A2CEB1500298B13 /* UIImageExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		209ABD152A2BAECE00723043 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		209ABD162A2BAEDA00723043 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				209ABCCF2A25E8FE00723043 /* ImageService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204108772A2CEA7D00298B13 /* UIViewControllerExt.swift in Sources */,
 				209ABC832A225D6200723043 /* AppDelegate.swift in Sources */,
 				209ABCCE2A24DE8600723043 /* BasePresenter.swift in Sources */,
 				209ABCD02A25E8FE00723043 /* ImageService.swift in Sources */,
@@ -353,6 +378,7 @@
 				209ABCBE2A24B1FF00723043 /* UserListVC.swift in Sources */,
 				209ABCC32A24B78C00723043 /* UserListViewCell.swift in Sources */,
 				209ABCC92A24BDFE00723043 /* BaseInteractor.swift in Sources */,
+				204108792A2CEB1500298B13 /* UIImageExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209ABCA42A225D6500723043 /* New_ChallengeUITests.swift in Sources */,
-				209ABCA62A225D6500723043 /* New_ChallengeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -98,7 +98,7 @@ extension UserListVC: UITableViewDelegate & UITableViewDataSource {
 
 extension UserListVC : UserListView {
     func showMessageError(_ body: String) {
-        print("\(body)")
+        showAlert(withTitle: "Error", withMessage: body)
     }
     
     func listRetrievedOf(_ users: [UserListViewModel]) {

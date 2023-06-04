@@ -17,8 +17,13 @@ class BaseInteractor {
     
     private let endpoint = "https://reqres.in/api/users"
     
-    func getUserListFromWS(page: Int = 1,completion: @escaping( UserListRS?, Error? )->()) {
-        guard let url = URL(string: endpoint + "?page=\(page)") else {return}
+    func getUserListFromWS(page: Int, completion: @escaping( UserListRS?, Error? )->()) {
+        
+        guard let url = URL(string: endpoint + "?page=\(page)") else {
+            let error: Error? = NSError(domain: "domain URL", code: 405, userInfo: [NSLocalizedDescriptionKey: "An error occurred reason: invalid URL"])
+            completion(nil,error)
+            return
+        }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error {

@@ -10,7 +10,7 @@ import Foundation
 
 final class ImageService {
     
-    func imageData(url : URL, completion: @escaping(Data?,Error?) -> Void) -> Cancellable! {
+    func imageData(url : URL, completion: @escaping(Data?,Error?) -> Void) -> Cancellable {
         
         let dataTask = URLSession.shared.dataTask(with: url) { data, _, error in
             if let error {
@@ -26,3 +26,4 @@ final class ImageService {
         return dataTask
     }
 }
+
